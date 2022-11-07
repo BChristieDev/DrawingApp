@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tools"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/drawingView">
+
+        <TableRow android:background="#808080">
+
+            <Button
+                android:id="@+id/redBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FF0000" />
+
+            <Button
+                android:id="@+id/yellowBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFFF00" />
+
+            <Button
+                android:id="@+id/greenBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FF00" />
+
+            <Button
+                android:id="@+id/aquaBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#03FDFC" />
+
+            <Button
+                android:id="@+id/darkBlueBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00008B" />
+
+            <Button
+                android:id="@+id/magentaBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FF00FF" />
+
+            <Button
+                android:id="@+id/blackBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/whiteBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFFFFF" />
+
+        </TableRow>
+
+        <TableRow android:background="#808080">
+
+            <ImageButton
+                android:id="@+id/widePaintBrushBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/brushInfo"
+                app:srcCompat="@drawable/wide_paint_brush" />
+
+            <ImageButton
+                android:id="@+id/crayonBtn"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/crayonInfo"
+                app:srcCompat="@drawable/crayon" />
+
+            <ImageButton
+                android:id="@+id/pencilBtn"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/pencilInfo"
+                app:srcCompat="@drawable/pencil" />
+
+            <Button
+                android:id="@+id/clearBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/clear"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <comp208.christie.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tools">
+
+    </comp208.christie.DrawingView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DrawingApp</string>
+    <string name="brushInfo">Wide Brush Image</string>
+    <string name="crayonInfo">Crayon Image</string>
+    <string name="pencilInfo">Pencil Info</string>
+    <string name="clear">Clear</string>
+</resources>
